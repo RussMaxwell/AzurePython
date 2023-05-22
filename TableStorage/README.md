@@ -4,6 +4,7 @@ Requirements to Run this Code
 2. Download Python Runtime 
 3. Within Azure AD, create an App Registration and Secret
 4. Copy the Client ID, Tenant ID, and Client Secret 
+5. Within the Storage Account, assign the service principle (app registration) storage data contributor role
  
  
 VS Code Steps
