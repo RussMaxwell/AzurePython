@@ -5,33 +5,39 @@
 First, you will need an Azure Subscription to move forward. If you do great, please continue.  
 After logging in via the Azure Portal, Create a resource group. I called mine lab 1.
 
-![sqlimg1](assets/sql1.jpg)
+![sqlimg1](assets/sql1.jpg)  
+
 
 After creation, ensure you're in the resource group via the Azure Portal:
 
-![sqlimg2](assets/sql2.jpg)
+![sqlimg2](assets/sql2.jpg)  
+
 
 ## Setup Azure SQL Server and DB
 
 Create an Azure SQL Server. Within lab1 resource group, click the Create button and search for Azure SQL.
 
-![sqlimg3](assets/sql3.jpg)
+![sqlimg3](assets/sql3.jpg)  
+
 
 Select Create, Azure SQL and select Single Database Option and click Create
 
-![sqlimg4](assets/sql4.jpg)
+![sqlimg4](assets/sql4.jpg)  
+
 
 Under Project Details, selected my subscription and my new lab1 resource group.
 Under Database details, typed autos for the databasename
 
-![sqlimg5](assets/sql5.jpg)
+![sqlimg5](assets/sql5.jpg)  
+
 
 For Server, click Create new
 Provide a unique name for the Server and select Use both SQL and Microsoft Entra authentication.
 for Set Microsoft Entra Admin, select an Azure identity.
 Fill out your Server Admin login and password. Important - Don't forget what you set here.
 
-![sqlimg6](assets/sql6.jpg)
+![sqlimg6](assets/sql6.jpg)  
+
 
 Back on the Create SQL Database page.
 
@@ -40,18 +46,21 @@ Back on the Create SQL Database page.
     * Compute + Storage:  I left it as default
     * Backup Storage redundancy:  Locally-redundant storage
 
-![sqlimg7](assets/sql7.jpg)
+![sqlimg7](assets/sql7.jpg)  
+
 
 Click next: Networking button
 _ connectivity method: public endpoint
 _ Allow Azure Services and resources to access this server: Yes \* Add current client IP address: Yes
 
-![sqlimg8](assets/sql8.jpg)
+![sqlimg8](assets/sql8.jpg)  
+
 
     * Remaining options default and click review + create.
     * On the create sql database overview page, click create button
 
-![sqlimg9](assets/sql9.jpg)
+![sqlimg9](assets/sql9.jpg)  
+
 
 ## Download and Install SQL Management Studio
 
@@ -62,13 +71,15 @@ Launch SQL Server Management Studio and connect to your Azure SQL DB Server
 
 For Example, mine is:
 
-![sqlimg10](assets/sql10.jpg)
+![sqlimg10](assets/sql10.jpg)  
+
 
 Input your username in UPN format above and hit connect.
 
 After successful connection
 
-![sqlimg11](assets/sql11.jpg)
+![sqlimg11](assets/sql11.jpg)  
+
 
 ## Create a new table with entries
 
@@ -106,11 +117,13 @@ GO
 
 Now refresh and you should see the following:
 
-![sqlimg12](assets/sql12.jpg)
+![sqlimg12](assets/sql12.jpg)  
+
 
 Running a select \* sql query shows the table is populated:
 
-![sqlimg13](assets/sql13.jpg)
+![sqlimg13](assets/sql13.jpg)  
+
 
 ## Create SQL Authentication account
 
@@ -142,4 +155,5 @@ USE master;
 
 ```
 
+  
 ![sqlimg14](assets/sql14.jpg)
