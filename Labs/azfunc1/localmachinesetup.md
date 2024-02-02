@@ -21,5 +21,3 @@ _ Type in: Azure Functions: Install
     * Follow the steps and install it
 
 [Install the Azurite emulator](https://marketplace.visualstudio.com/items?itemName=Azurite.azurite)
-
-[Install Node JS](https://nodejs.org/en/download/)
