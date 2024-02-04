@@ -20,4 +20,6 @@ _ Type in: Azure Functions: Install
     * Click the first option:   Azure Functions: Install or Update Azure Functions Core Tools
     * Follow the steps and install it
 
+[Install Node.js](https://nodejs.org/en)
+
 [Install the Azurite emulator](https://marketplace.visualstudio.com/items?itemName=Azurite.azurite)
