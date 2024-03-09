@@ -18,10 +18,6 @@ def adofun(req: func.HttpRequest) -> func.HttpResponse:
     try:
         credential = DefaultAzureCredential()
 
-        policy = BearerTokenCredentialPolicy(
-            credential, "499b84ac-1321-427f-aa17-267ca6975798/.default")
-        pipeline = Pipeline(transport=RequestsTransport(), policies=[policy])
-
         # swap out your organization and project name
         organization_url = "https://yourado-orgname.visualstudio.com/yourado-projectname"
 
