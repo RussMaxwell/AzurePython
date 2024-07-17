@@ -132,7 +132,6 @@ Within SQL Management Studio, open a new query window and leverage the sample be
 Ensure you update your password with your desired password.
 
 ```
-	USE master;
 	CREATE LOGIN funcusr WITH PASSWORD = 'password';
 	GO
 
